@@ -1,38 +1,92 @@
 .App {
-  text-align: center;
+	position: relative;
+	width: 799px;
+	margin: 0 auto;
+	border: 1px solid black;
+	border-radius: 7px;
+	box-shadow: 1px 1px 1px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+	position: fixed;
+	width: 799px;
+	height: 75px;
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ladybug-logo {
+	width: 100px;
+	height: 100px;
+	margin: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-buttons {
+	position: absolute;
+	right: 5px;
+	top: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-button {
+	font-weight: bold;
+	border-radius: 7px;
+	padding: 3px 10px;
+	margin: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-button:hover {
+	cursor: pointer;
+}
+
+.main {
+	background-color: whitesmoke;
+	padding-bottom: 70px;
+}
+
+h1 {
+	margin: 0;
+	padding: 8px;
+	color: rgb(237, 31, 36);
+}
+
+ul {
+	list-style: none;
+	padding: 10px;
+}
+
+.garden-store {
+	background-color: rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	margin-bottom: 8px;
+	border: 1px solid black;
+	border-radius: 7px;
+	box-shadow: 1px 1px 1px;
+}
+
+.name {
+	font-weight: bold;
+}
+
+.address-link {
+	color: orange;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.download-button {
+	display: block;
+	margin: 0 auto;
+	width: 97%;
+	background-color: rgb(237, 31, 36);
+	color: orange;
+	font-weight: bold;
+	font-size: 20px;
+	border: 1px solid rgb(237, 31, 36);
+	border-radius: 7px;
+	padding: 10px;
+}
+
+.download-button:hover {
+	cursor: pointer;
 }
