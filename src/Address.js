@@ -1,12 +1,17 @@
-const Address = (props) => {
-	// const {street, zip, city, website} = props
+import { useState } from 'react'
+import PopUp from './PopUp'
+import AddressLink from './AddressLink'
+
+const Address = ({ name, address }) => {
+	const [showAddress, setShowAddress] = useState(false)
 
 	return (
-		<span>
-			{/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-			<a className="address-link" href="#">
-				Address
-			</a>
+		<span className="address-container">
+			{showAddress && (
+				<PopUp name={name} address={address} hideAddress={setShowAddress} />
+			)}
+
+			<AddressLink clicked={showAddress} showAddress={setShowAddress} />
 		</span>
 	)
 }

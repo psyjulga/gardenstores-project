@@ -8,7 +8,7 @@ const GardenStore = (props) => {
 	const { rating, name, trees, plants, bio, address } = store
 
 	return (
-		<li key={name} className="garden-store">
+		<li className="garden-store">
 			<div>
 				<Rating rating={rating} />
 				<Name name={name} />
@@ -19,7 +19,7 @@ const GardenStore = (props) => {
 					plants={plants === 'y' ? '🟢' : '🔴'}
 					bio={bio === 'y' ? '🟢' : '🔴'}
 				/>
-				<Address address={address} />
+				<Address name={name} address={address} />
 			</div>
 		</li>
 	)

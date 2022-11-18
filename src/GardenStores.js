@@ -11,10 +11,10 @@ const GardenStores = () => {
 			plants: 'y',
 			bio: 'n',
 			address: {
-				street: 'main street 2',
+				street: 'Main Street 2',
 				zip: 12345,
 				city: 'Somewhere',
-				Website: url,
+				website: url,
 			},
 		},
 		{
@@ -24,10 +24,10 @@ const GardenStores = () => {
 			plants: 'y',
 			bio: 'n',
 			address: {
-				street: 'flower street 2',
+				street: 'Flower Street 2',
 				zip: 55545,
 				city: 'Nowhere',
-				Website: url,
+				website: url,
 			},
 		},
 		{
@@ -37,10 +37,10 @@ const GardenStores = () => {
 			plants: 'y',
 			bio: 'y',
 			address: {
-				street: 'diagon alley 2',
+				street: 'Diagon Alley 2',
 				zip: 12321,
 				city: 'Hogwarts',
-				Website: url,
+				website: url,
 			},
 		},
 		{
@@ -50,10 +50,10 @@ const GardenStores = () => {
 			plants: 'y',
 			bio: 'y',
 			address: {
-				street: 'queen street 2',
+				street: 'Queen Street 2',
 				zip: 55555,
-				city: "salem's lot",
-				Website: url,
+				city: "Salem's Lot",
+				website: url,
 			},
 		},
 		{
@@ -63,18 +63,18 @@ const GardenStores = () => {
 			plants: 'y',
 			bio: 'y',
 			address: {
-				street: 'heaven street 2',
+				street: 'Heaven Street 2',
 				zip: 12121,
 				city: 'Everywhere',
-				Website: url,
+				website: url,
 			},
 		},
 	]
 
 	return (
 		<ul className="garden-stores">
-			{gardenStores.map((store) => (
-				<GardenStore store={store} />
+			{gardenStores.map((store, index) => (
+				<GardenStore key={index} store={store} />
 			))}
 		</ul>
 	)

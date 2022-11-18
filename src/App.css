@@ -1,6 +1,5 @@
 .App {
 	background-color: whitesmoke;
-	position: relative;
 	width: 799px;
 	margin: 0 auto;
 	border: 1px solid black;
@@ -9,6 +8,7 @@
 }
 
 .navbar {
+	z-index: 1;
 	position: fixed;
 	width: 799px;
 	height: 75px;
@@ -38,11 +38,24 @@
 	cursor: pointer;
 }
 
+.image-slide {
+	position: relative;
+}
+
+.image-headline {
+	width: 400px;
+	font-size: 65px;
+	position: absolute;
+	bottom: 5px;
+	right: 10px;
+	color: whitesmoke;
+}
+
 .main {
 	padding-bottom: 70px;
 }
 
-h1 {
+.main-headline {
 	margin: 0;
 	padding: 8px;
 	color: rgb(237, 31, 36);
@@ -78,6 +91,53 @@ ul {
 	color: orange;
 	font-weight: bold;
 	text-decoration: none;
+}
+
+.website-link {
+	display: inline-block;
+	margin-top: 15px;
+	color: orange;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.pop-up {
+	padding-left: 20px;
+	padding-top: 10px;
+	background-color: whitesmoke;
+	border: 1px solid black;
+	border-radius: 7px;
+	box-shadow: 1px 1px 1px;
+	height: 200px;
+	width: 350px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -175px;
+}
+
+.pop-up-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.pop-up-headline {
+	font-size: 18px;
+}
+
+.pop-up-close-button {
+	border-radius: 50%;
+	background-color: black;
+	color: whitesmoke;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-right: 20px;
+	height: 25px;
+}
+
+.pop-up-close-button:hover {
+	cursor: pointer;
 }
 
 .download-button {

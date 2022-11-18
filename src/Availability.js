@@ -5,7 +5,7 @@ const Availability = (props) => {
 		<span className="availability">
 			<span className="availability-item">Trees {trees}</span>
 			<span className="availability-item">Plants {plants}</span>
-			<span className="availability-item">Bio {bio}</span>
+			<span className="availability-item">Organic {bio}</span>
 		</span>
 	)
 }
