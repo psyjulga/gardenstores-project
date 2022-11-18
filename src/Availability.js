@@ -2,8 +2,10 @@ const Availability = (props) => {
 	const { trees, plants, bio } = props
 
 	return (
-		<span>
-			Trees {trees} Plants {plants} Bio {bio}
+		<span className="availability">
+			<span className="availability-item">Trees {trees}</span>
+			<span className="availability-item">Plants {plants}</span>
+			<span className="availability-item">Bio {bio}</span>
 		</span>
 	)
 }

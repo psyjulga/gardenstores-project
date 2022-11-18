@@ -1,4 +1,5 @@
 .App {
+	background-color: whitesmoke;
 	position: relative;
 	width: 799px;
 	margin: 0 auto;
@@ -38,7 +39,6 @@
 }
 
 .main {
-	background-color: whitesmoke;
 	padding-bottom: 70px;
 }
 
@@ -66,9 +66,15 @@ ul {
 
 .name {
 	font-weight: bold;
+	margin-left: 10px;
+}
+
+.availability-item {
+	margin: 0 10px;
 }
 
 .address-link {
+	margin-left: 80px;
 	color: orange;
 	font-weight: bold;
 	text-decoration: none;

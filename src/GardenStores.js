@@ -44,7 +44,7 @@ const GardenStores = () => {
 			},
 		},
 		{
-			rating: 2,
+			rating: 2.5,
 			name: "King's Garden",
 			trees: 'n',
 			plants: 'y',

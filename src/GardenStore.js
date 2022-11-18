@@ -9,14 +9,18 @@ const GardenStore = (props) => {
 
 	return (
 		<li key={name} className="garden-store">
-			<Rating rating={rating} />
-			<Name name={name} />
-			<Availability
-				trees={trees === 'y' ? '✔' : 'X'}
-				plants={plants === 'y' ? '✔' : 'X'}
-				bio={bio === 'y' ? '✔' : 'X'}
-			/>
-			<Address address={address} />
+			<div>
+				<Rating rating={rating} />
+				<Name name={name} />
+			</div>
+			<div>
+				<Availability
+					trees={trees === 'y' ? '🟢' : '🔴'}
+					plants={plants === 'y' ? '🟢' : '🔴'}
+					bio={bio === 'y' ? '🟢' : '🔴'}
+				/>
+				<Address address={address} />
+			</div>
 		</li>
 	)
 }
