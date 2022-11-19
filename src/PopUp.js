@@ -10,7 +10,7 @@ const PopUp = (props) => {
 					className="pop-up-close-button"
 					onClick={() => hideAddress(false)}
 				>
-					X
+					&times;
 				</button>
 			</div>
 

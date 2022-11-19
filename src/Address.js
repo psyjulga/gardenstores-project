@@ -5,10 +5,21 @@ import AddressLink from './AddressLink'
 const Address = ({ name, address }) => {
 	const [showAddress, setShowAddress] = useState(false)
 
+	const overlayStyleActive = {
+		opacity: 1,
+		pointerEvents: 'all',
+	}
+
 	return (
 		<span className="address-container">
 			{showAddress && (
-				<PopUp name={name} address={address} hideAddress={setShowAddress} />
+				<span>
+					<PopUp name={name} address={address} hideAddress={setShowAddress} />
+					<div
+						id="overlay"
+						style={showAddress ? overlayStyleActive : null}
+					></div>
+				</span>
 			)}
 
 			<AddressLink clicked={showAddress} showAddress={setShowAddress} />
