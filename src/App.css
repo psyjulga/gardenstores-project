@@ -49,6 +49,28 @@
 	bottom: 5px;
 	right: 10px;
 	color: whitesmoke;
+	text-shadow: 2px 2px black;
+}
+
+.slide-buttons {
+	width: 100%;
+	position: absolute;
+	bottom: 45%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.slide-button {
+	margin: 10px;
+	border: none;
+	background: none;
+	font-size: 65px;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.slide-button:hover {
+	cursor: pointer;
 }
 
 .main {
