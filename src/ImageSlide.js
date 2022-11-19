@@ -22,6 +22,7 @@ const ImageSlide = () => {
 				alt="garden"
 				width={799}
 				height={586}
+				className="image"
 			/>
 			<div className="slide-buttons">
 				<SlideButton arrow="<" onClick={() => slideImage('left')} />
