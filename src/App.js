@@ -4,11 +4,13 @@ import ImageSlide from './ImageSlide'
 import Main from './Main'
 
 function App() {
+	const mobileView = window.innerWidth <= 645
+
 	return (
 		<div className="App">
-			<Navbar />
+			<Navbar mobileView={mobileView} />
 			<ImageSlide />
-			<Main />
+			<Main mobileView={mobileView} />
 		</div>
 	)
 }

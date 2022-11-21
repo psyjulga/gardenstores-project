@@ -1,6 +1,6 @@
 import GardenStore from './GardenStore'
 
-const GardenStores = () => {
+const GardenStores = ({ mobileView }) => {
 	const url = 'https://github.com/psyjulga/gardenstores-project'
 
 	const gardenStores = [
@@ -74,7 +74,7 @@ const GardenStores = () => {
 	return (
 		<ul className="garden-stores">
 			{gardenStores.map((store, index) => (
-				<GardenStore key={index} store={store} />
+				<GardenStore key={index} store={store} mobileView={mobileView} />
 			))}
 		</ul>
 	)

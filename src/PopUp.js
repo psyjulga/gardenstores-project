@@ -1,31 +1,27 @@
+import AddressCloseButton from './AddressCloseButton'
+import Name from './Name'
+import WebsiteLink from './WebsiteLink'
+import AddressRows from './AddressRows'
+
 const PopUp = (props) => {
 	const { name, address, hideAddress } = props
 	const { street, zip, city, website } = address
 
+	const addressRowData = { street, zip, city }
+
 	return (
 		<div className="pop-up">
 			<div className="pop-up-header">
-				<h1 className="pop-up-headline">{name}</h1>
-				<button
-					className="pop-up-close-button"
+				<Name name={name} />
+				<AddressCloseButton
 					onClick={() => hideAddress(false)}
-				>
-					&times;
-				</button>
+					cssClass="pop-up-close-button"
+					symbol="&times;"
+				/>
 			</div>
-
-			<address>{street}</address>
-			<address>
-				{zip} {city}
-			</address>
-			<a
-				className="website-link"
-				href={website}
-				target="_blank"
-				rel="noreferrer"
-			>
-				Go To Webpage
-			</a>
+			<AddressRows addressRowData={addressRowData} />
+			<br />
+			<WebsiteLink website={website} />
 		</div>
 	)
 }

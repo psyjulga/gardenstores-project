@@ -1,10 +1,10 @@
 import GardenStores from './GardenStores'
 
-const Main = () => {
+const Main = ({ mobileView }) => {
 	return (
 		<main className="main">
 			<h1 className="main-headline">Compare Your Garden Stores</h1>
-			<GardenStores />
+			<GardenStores mobileView={mobileView} />
 			<button className="download-button">Download More Garden Stores</button>
 		</main>
 	)

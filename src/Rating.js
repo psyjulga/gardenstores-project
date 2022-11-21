@@ -12,7 +12,7 @@ const Rating = ({ rating }) => {
 
 	if ((rating * 2) % 2 !== 0) hearts[rating - 0.5] = half
 
-	return <span>{hearts.join('')}</span>
+	return <span className="rating">{hearts.join('')}</span>
 }
 
 export default Rating

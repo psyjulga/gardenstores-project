@@ -1,8 +1,11 @@
 import { useState } from 'react'
 import PopUp from './PopUp'
 import AddressLink from './AddressLink'
+import AddressCard from './AddressCard'
 
-const Address = ({ name, address }) => {
+const Address = (props) => {
+	const { name, address, mobileView } = props
+
 	const [showAddress, setShowAddress] = useState(false)
 
 	const overlayStyleActive = {
@@ -12,17 +15,23 @@ const Address = ({ name, address }) => {
 
 	return (
 		<span className="address-container">
-			{showAddress && (
+			{showAddress && !mobileView ? (
 				<span>
 					<PopUp name={name} address={address} hideAddress={setShowAddress} />
-					<div
-						id="overlay"
-						style={showAddress ? overlayStyleActive : null}
-					></div>
+					<div id="overlay" style={overlayStyleActive}></div>
 				</span>
-			)}
+			) : null}
 
-			<AddressLink clicked={showAddress} showAddress={setShowAddress} />
+			<AddressLink
+				clicked={showAddress}
+				showAddress={showAddress}
+				setShowAddress={setShowAddress}
+				mobileView={mobileView}
+			/>
+
+			{showAddress && mobileView ? (
+				<AddressCard name={name} address={address} />
+			) : null}
 		</span>
 	)
 }

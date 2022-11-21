@@ -3,7 +3,7 @@ import Logo from './Logo'
 import NavButtons from './NavButtons'
 import { useState } from 'react'
 
-const Navbar = () => {
+const Navbar = ({ mobileView }) => {
 	const [showMenu, setShowMenu] = useState(false)
 
 	return (
@@ -14,11 +14,7 @@ const Navbar = () => {
 			/>
 			<Logo />
 			<NavButtons
-				style={
-					window.innerWidth <= 645 && showMenu === false
-						? { display: 'none' }
-						: null
-				}
+				style={mobileView && showMenu === false ? { display: 'none' } : null}
 			/>
 		</nav>
 	)

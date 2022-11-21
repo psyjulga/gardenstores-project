@@ -109,9 +109,12 @@ ul {
 	box-shadow: 1px 1px 1px;
 }
 
+.rating {
+	margin-right: 10px;
+}
+
 .name {
 	font-weight: bold;
-	margin-left: 10px;
 }
 
 .availability-item {
@@ -127,7 +130,6 @@ ul {
 
 .website-link {
 	display: inline-block;
-	margin-top: 15px;
 	color: orange;
 	font-weight: bold;
 	text-decoration: none;
@@ -135,7 +137,7 @@ ul {
 
 .pop-up {
 	padding-left: 20px;
-	padding-top: 10px;
+	padding-top: 15px;
 	background-color: whitesmoke;
 	border: 1px solid black;
 	border-radius: 7px;
@@ -170,23 +172,42 @@ ul {
 	/* vertical alignment of header */
 }
 
-.pop-up-headline {
-	font-size: 18px;
-}
-
 .pop-up-close-button {
 	border-radius: 50%;
 	background-color: black;
 	color: whitesmoke;
 	font-weight: bold;
 	font-size: 18px;
-	margin-top: 10px;
 	margin-right: 20px;
 	height: 25px;
 }
 
 .pop-up-close-button:hover {
 	cursor: pointer;
+}
+
+.address-card-close-button {
+	border-radius: 50%;
+	border: 1px solid whitesmoke;
+	background-color: whitesmoke;
+	color: rgb(96, 173, 91);
+	font-weight: bold;
+	font-size: 18px;
+	height: 25px;
+}
+
+.address-card {
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 7px;
+	margin-top: 7px;
+	padding: 7px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.addresscard-left {
+	display: flex;
+	flex-direction: column;
 }
 
 .download-button {
@@ -253,5 +274,30 @@ ul {
 	.image-headline {
 		font-size: 50px;
 		width: 300px;
+	}
+
+	.garden-store {
+		flex-direction: column;
+	}
+
+	.gardenstore-right {
+		display: flex;
+		flex-direction: column;
+		padding-top: 8px;
+	}
+
+	.availability-item {
+		margin: 0 10px 0 0;
+	}
+
+	.address-link {
+		margin: 8px 0 0 0;
+		background-color: rgb(96, 173, 91);
+		border-radius: 7px;
+		color: whitesmoke;
+		/* width: 90%; */
+		padding: 5px;
+		display: block;
+		text-align: center;
 	}
 }
