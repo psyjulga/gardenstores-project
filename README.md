@@ -1,13 +1,13 @@
-### Gardenstores Project
+## Gardenstores Project
 
-Inspired by an onsite coding challenge at a potential employer, I built the whole thing anew at home.
-And, not too surprising - the more relaxed the mind, the better the result 🌸
+- Inspired by an onsite coding challenge at a potential employer, I built the whole thing anew at home.
+- And, not too surprising - the more relaxed the mind, the better the result 🌸
 
-## Tech Stack
+### Tech Stack
 
-I used create-react-app to bootstrap this project.
-The styling is pure & self-built CSS 🧡💜💙
+- I used create-react-app to bootstrap this project.
+- The styling is pure & self-built CSS 🧡💜💙
 
-## Instruction
+### Instruction
 
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
