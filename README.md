@@ -10,4 +10,4 @@
 
 ### Instruction
 
-- Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Open [https://gardenstores-project.netlify.app/](https://gardenstores-project.netlify.app/) to view it in your browser.
