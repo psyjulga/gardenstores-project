@@ -257,17 +257,18 @@ ul {
 }
 
 .footer {
+	z-index: 1;
 	position: fixed;
-	bottom: 0;
-	width: 100%;
+	width: 799px;
+	height: 75px;
+	background-color: rgba(255, 165, 0, 0.8);
 	text-align: center;
-	padding: 20px;
-	background-color: orange;
 }
 
 .footer a {
 	margin-right: 5px;
 	font-weight: bold;
+	color: rgb(237, 31, 36);
 }
 
 /* MOBILE VIEW */
