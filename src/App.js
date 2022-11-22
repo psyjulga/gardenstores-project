@@ -1,7 +1,7 @@
 import './App.css'
 import Navbar from './Navbar'
 import ImageSlide from './ImageSlide'
-import Main from './Main'
+import GardenStores from './GardenStores'
 
 function App() {
 	const mobileView = window.innerWidth <= 645
@@ -10,7 +10,7 @@ function App() {
 		<div className="App">
 			<Navbar mobileView={mobileView} />
 			<ImageSlide />
-			<Main mobileView={mobileView} />
+			<GardenStores mobileView={mobileView} />
 		</div>
 	)
 }

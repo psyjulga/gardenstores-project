@@ -1,27 +1,35 @@
-// import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import GardenStore from './GardenStore'
 
 const GardenStores = ({ mobileView }) => {
-	// const [gardenStores, setGardenStores] = useState([])
+	const dataJson = require('./fake_api/data.json')
+	const data = dataJson['GardenStores']
 
-	const gardenStoresJson = require('./fake_api/data.json')
-	const gardenStores = gardenStoresJson['GardenStores']
+	const [gardenStores, setGardenStores] = useState(
+		data.filter((d) => data.indexOf(d) < 5)
+	)
 
-	// useEffect(() => {
-	// 	fetch(path)
-	// 		.then((res) => {
-	// 			console.log('RES: ', res)
-	// 			res.json()
-	// 		})
-	// 		.then((gardenStores) => setGardenStores(gardenStores))
-	// }, [])
+	const downloadMoreStores = () => {
+		if (gardenStores.length === data.length)
+			alert('There are no more Stores available at the moment.')
+		else
+			setGardenStores(
+				data.filter((d) => data.indexOf(d) < gardenStores.length + 5)
+			)
+	}
 
 	return (
-		<ul className="garden-stores">
-			{gardenStores.map((store, index) => (
-				<GardenStore key={index} store={store} mobileView={mobileView} />
-			))}
-		</ul>
+		<main className="main">
+			<h1 className="main-headline">Compare Your Garden Stores</h1>
+			<ul className="garden-stores">
+				{gardenStores.map((store, index) => (
+					<GardenStore key={index} store={store} mobileView={mobileView} />
+				))}
+			</ul>
+			<button onClick={downloadMoreStores} className="download-button">
+				Download More Garden Stores
+			</button>
+		</main>
 	)
 }
 
