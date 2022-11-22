@@ -87,10 +87,39 @@
 	padding-bottom: 70px;
 }
 
+.headline-section {
+	display: flex;
+	justify-content: space-between;
+}
+
 .main-headline {
 	margin: 0;
 	padding: 8px;
 	color: rgb(237, 31, 36);
+}
+
+.sort-buttons {
+	margin-right: 20px;
+	margin-top: 12px;
+}
+
+.sort-button {
+	background-color: rgb(237, 31, 36);
+	border: 3px solid orange;
+	border-radius: 7px;
+	color: orange;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 7px;
+	margin: 2px;
+}
+
+.sort-button:hover {
+	cursor: pointer;
+}
+
+.search-form {
+	margin-left: 15px;
 }
 
 ul {
