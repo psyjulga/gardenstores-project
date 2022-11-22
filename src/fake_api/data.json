@@ -1,0 +1,134 @@
+{
+	"GardenStores": [
+		{
+			"rating": 3,
+			"name": "Fool's Garden",
+			"trees": "y",
+			"plants": "y",
+			"bio": "n",
+			"address": {
+				"street": "Main Street 2",
+				"zip": 12345,
+				"city": "Somewhere",
+				"website": "https://github.com/psyjulga/gardenstores-project"
+			}
+		},
+		{
+			"rating": 4.5,
+			"name": "Savage Garden",
+			"trees": "n",
+			"plants": "y",
+			"bio": "n",
+			"address": {
+				"street": "Flower Street 2",
+				"zip": 55545,
+				"city": "Nowhere",
+				"website": "https://github.com/psyjulga/gardenstores-project"
+			}
+		},
+		{
+			"rating": 4,
+			"name": "Magic Garden",
+			"trees": "y",
+			"plants": "y",
+			"bio": "y",
+			"address": {
+				"street": "Diagon Alley 2",
+				"zip": 12321,
+				"city": "Hogwarts",
+				"website": "https://github.com/psyjulga/gardenstores-project"
+			}
+		},
+		{
+			"rating": 2.5,
+			"name": "King's Garden",
+			"trees": "n",
+			"plants": "y",
+			"bio": "y",
+			"address": {
+				"street": "Queen Street 2",
+				"zip": 55555,
+				"city": "Salem's Lot",
+				"website": "https://github.com/psyjulga/gardenstores-project"
+			}
+		},
+		{
+			"rating": 5,
+			"name": "Garden Heaven",
+			"trees": "y",
+			"plants": "y",
+			"bio": "y",
+			"address": {
+				"street": "Heaven Street 2",
+				"zip": 12121,
+				"city": "Everywhere",
+				"website": "https://github.com/psyjulga/gardenstores-project"
+			}
+		},
+		{
+			"rating": 3.5,
+			"name": "Garden Place",
+			"trees": "y",
+			"plants": "y",
+			"bio": "y",
+			"address": {
+				"street": "Main Street 5",
+				"zip": 12333,
+				"city": "Whereever",
+				"website": "https://github.com/psyjulga/gardenstores-project"
+			}
+		},
+		{
+			"rating": 4.5,
+			"name": "My Garden",
+			"trees": "y",
+			"plants": "y",
+			"bio": "n",
+			"address": {
+				"street": "Lower Street 2",
+				"zip": 54445,
+				"city": "Gotham",
+				"website": "https://github.com/psyjulga/gardenstores-project"
+			}
+		},
+		{
+			"rating": 4.5,
+			"name": "Great Garden",
+			"trees": "y",
+			"plants": "n",
+			"bio": "y",
+			"address": {
+				"street": "Big Alley 2",
+				"zip": 12378,
+				"city": "Town",
+				"website": "https://github.com/psyjulga/gardenstores-project"
+			}
+		},
+		{
+			"rating": 3.5,
+			"name": "Queen's Garden",
+			"trees": "y",
+			"plants": "y",
+			"bio": "y",
+			"address": {
+				"street": "King Street 2",
+				"zip": 33333,
+				"city": "Lady's Lot",
+				"website": "https://github.com/psyjulga/gardenstores-project"
+			}
+		},
+		{
+			"rating": 5,
+			"name": "Garden Gate",
+			"trees": "y",
+			"plants": "y",
+			"bio": "n",
+			"address": {
+				"street": "Garden Street 2",
+				"zip": 12221,
+				"city": "Here",
+				"website": "https://github.com/psyjulga/gardenstores-project"
+			}
+		}
+	]
+}
