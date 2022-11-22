@@ -256,6 +256,20 @@ ul {
 	cursor: pointer;
 }
 
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	background-color: orange;
+}
+
+.footer a {
+	margin-right: 5px;
+	font-weight: bold;
+}
+
 /* MOBILE VIEW */
 
 @media (max-width: 640px) {
